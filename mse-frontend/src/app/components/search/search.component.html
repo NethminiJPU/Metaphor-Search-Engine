@@ -1,0 +1,37 @@
+<div style="width: 50vw;justify-content: center;margin: 0 auto;padding-top: 20px;padding-bottom: 20px;">
+    <mat-card class="mat-elevation-z10">
+        <mat-card-header>
+            <mat-card-title>
+                <mat-form-field class="example-form-field" appearance="outline">
+                    <mat-label>Enter Your Search Query</mat-label>
+                    <input matInput type="text" [(ngModel)]="query">
+                    <button mat-button *ngIf="query" matSuffix mat-icon-button aria-label="Clear" (click)="clear()">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+                <button mat-raised-button color="primary" (click)="search()">Search</button>
+            </mat-card-title>
+        </mat-card-header>
+    </mat-card>
+</div>
+<div *ngIf="searched" style="text-align: center;">
+    <button mat-button color="primary" class="dropdown-button" [matMenuTriggerFor]="menuSingers">Filter
+        By Singer</button>
+    <mat-menu #menuSingers="matMenu">
+        <button *ngFor="let item of aggregations.singers_filter.buckets" mat-menu-item (click)="filterBySinger(item.key)">{{item.key}}
+            ({{item.doc_count}})</button>
+    </mat-menu>
+    <button mat-button color="primary" class="dropdown-button" [matMenuTriggerFor]="menuComposers">Filter
+        By Composer</button>
+    <mat-menu #menuComposers="matMenu">
+        <button *ngFor="let item of aggregations.composer_filter.buckets" mat-menu-item (click)="filterByComposer(item.key)">{{item.key}}
+            ({{item.doc_count}})</button>
+    </mat-menu>
+    <button mat-button color="primary" class="dropdown-button" [matMenuTriggerFor]="menuLyricist">Filter
+        By Lyricist</button>
+    <mat-menu #menuLyricist="matMenu">
+        <button *ngFor="let item of aggregations.lyricist_filter.buckets" mat-menu-item (click)="filterByLyricist(item.key)">{{item.key}}
+            ({{item.doc_count}})</button>
+    </mat-menu>
+</div>
+<app-results [searchResult]="resultEvent"></app-results>
