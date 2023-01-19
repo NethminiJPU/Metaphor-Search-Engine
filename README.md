@@ -1,8 +1,8 @@
 # Metaphor-Search-Engine
 
 ## Overview
-* This repository contains the source code for a Sinhala Metaphor Song Search Engine developed using ElasticSearch as the search engine, and NodeJS as the framework for the backend and Angular as the frontend web framework. 
-* The corpus for search engine consists Sinhala songs sung by the artists named, W.D.Amaradewa, Edward Jayakodi, Amarasiri Peiris, Nanda Malini, Karunarathna Divulgane and Kasun Kalhara.
+* This repository contains the source code for a Sinhala Metaphor Search Engine developed using ElasticSearch as the search engine, and NodeJS as the framework for the backend and Angular as the frontend web framework. 
+* The corpus for search engine consists metaphors of Sinhala songs sung by the artists named, W.D.Amaradewa, Edward Jayakodi, Amarasiri Peiris, Nanda Malini, Karunarathna Divulgane and Kasun Kalhara.
 
 ## Features
 * USers can search for simple word for find metaphors for it.
