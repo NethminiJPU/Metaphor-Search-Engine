@@ -52,7 +52,7 @@ Repository contains 4 main folders.
 2. Run Kibana instance (port 5601) if you need to view the indexes
 3. Elasticsearch Configuration (Run inside es-config directory)
 * `npm install`
-* `node index_data.js`
+* `node es-config.js`
 4. Backend start (inside mse-backend directory)
 * `npm install` 
 * `npm start` 
