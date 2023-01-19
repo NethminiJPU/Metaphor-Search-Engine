@@ -53,15 +53,15 @@ Repository contains 4 main folders.
 3. Elasticsearch Configuration (Run inside es-config directory)
 * `npm install`
 * `node index_data.js`
-4. Backend start (inside search-engine-back directory)
+4. Backend start (inside mse-backend directory)
 * `npm install` 
 * `npm start` 
-5. Frontend start (inside search-engine-front directory) 
+5. Frontend start (inside mse-frontend directory) 
 * `npm install`
 * `ng serve` 
 6. Finally, in browser -> `localhost:4200`
 
-### Used Techniques
+## Used Techniques
 * Tokenization
     * ICU Tokenizer
     * Edge n-gram Tokenizer
