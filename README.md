@@ -41,10 +41,10 @@ Repository contains 4 main folders.
     * Interpretation
 
 ## Prerequisites
-* Angular - 15.1.0
-* NodeJS - 18.13.0
-* Elasticsearch - 8.6.0
-* Kibana - 8.6.0 (if you need to view the ES database UI)
+* Angular - v15.1.0
+* NodeJS - v18.13.0
+* Elasticsearch - v8.6.0
+* Kibana - v8.6.0 (if you need to view the ES database UI)
 
 
 ## SetUp
